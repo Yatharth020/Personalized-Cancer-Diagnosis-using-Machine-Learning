@@ -8,6 +8,15 @@
 <h6> Problem statement : </h6>
 <p> Classify the given genetic variations/mutations based on evidence from text-based clinical literature. </p>
 
+<h2>1.3. Real-world/Business objectives and constraints.</h2>
+* No low-latency requirement.
+
+* Interpretability is important.
+
+* Errors can be very costly.
+
+* Probability of a data-point belonging to each class is needed.
+
 # Methodology
 
 
@@ -53,5 +62,13 @@
 
 - Using TfidfVectorizer for all three of the features.limitting ourseleves to top 10000 features of the text and using uni,bi,tri and four grams along with logistic regression model which has class weights balanced
     
-    
+### Note : The most important part was to understand the model interpretability and metric chose and avoiding it to become a black box along with keeping a tab on data leakage for response coding part.
             
+## Results 
+<img src = https://github.com/yatscool007/Personalized-Cancer-Diagnosis/blob/master/New%20folder/Capture1.PNG>
+<img src = https://github.com/yatscool007/Personalized-Cancer-Diagnosis/blob/master/New%20folder/Capture2.PNG>
+<img src = https://github.com/yatscool007/Personalized-Cancer-Diagnosis/blob/master/New%20folder/Capture3.PNG>
+<img src = https://github.com/yatscool007/Personalized-Cancer-Diagnosis/blob/master/New%20folder/Capture4.PNG>
+<img src = https://github.com/yatscool007/Personalized-Cancer-Diagnosis/blob/master/New%20folder/Capture5.PNG>
+
+### We find that though Logistic Regression with class balanced gives the least log loss on test data - 0.933 and cross validation loss - 0.976 and percentage of missclassified points are also aroud 30.5 percent which is reasonably good which we achieved using TFIDF vectorization with top 10000 features and ngram_range = (1,4).
