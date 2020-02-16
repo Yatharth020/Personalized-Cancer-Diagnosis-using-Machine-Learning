@@ -1,12 +1,9 @@
 # Personalized-Cancer-Diagnosis
 
-<h1>1. Business Problem</h1>
-<p> Source: https://www.kaggle.com/c/msk-redefining-cancer-treatment/ </p>
-<p> Data: Memorial Sloan Kettering Cancer Center (MSKCC)</p>
-<p> Download training_variants.zip and training_text.zip from Kaggle.</p> 
+<img src = https://www.healtheuropa.eu/wp-content/uploads/2019/06/4X-image-768x432.jpg height = '400' width ='800'>
 
-<h6> Context:</h6>
-<p> Source: https://www.kaggle.com/c/msk-redefining-cancer-treatment/discussion/35336#198462</p>
+<h1>1. Business Problem</h1>
+<p>Main objective of this project is to distinguishing the mutations that contribute to tumor growth (drivers) from the neutral mutations. Currently this interpretation of genetic mutations is being done manually. This is a very time-consuming task where a clinical pathologist has to manually review and classify every single genetic mutation based on evidence from text-based clinical literature. so designed a machine learning model that classifies given genetic variations/mutations based on evidence from text-based clinical literature. Got data from Kaggle which was updated by Memorial Sloan Kettering Cancer Centre. Data having some Gene, gene variations and some medical literature text related to gene variations.</p>
 
 <h6> Problem statement : </h6>
 <p> Classify the given genetic variations/mutations based on evidence from text-based clinical literature. </p>
